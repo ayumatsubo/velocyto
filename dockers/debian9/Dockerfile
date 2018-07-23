@@ -1,5 +1,5 @@
 FROM rocker/rstudio
-MAINTAINER Peter Kharchenko "peter_kharchenko@hms.harvard.edu"
+MAINTAINER Ayumu Tsubosaka "tbskaym314731@gmail.com"
 
 RUN apt-get update --yes && apt-get install --no-install-recommends --yes \
   build-essential \
