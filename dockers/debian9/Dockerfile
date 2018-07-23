@@ -40,8 +40,8 @@ RUN \
 
 
 RUN useradd -m user
-USER user
-ENTRYPOINT ["/bin/bash"]
+#USER user
+#ENTRYPOINT ["/bin/bash rs"]
 WORKDIR "/home/user"
 
 RUN \
