@@ -53,13 +53,13 @@ RUN \
   R -e 'devtools::install_local("~/velocyto.R/",dep=T,upgrade_dependencies=F)'
 
 RUN \
-  R -e 'devtools::install_github("igraph/rigraph")
+  R -e 'devtools::install_github("igraph/rigraph")'
 
 RUN \
   R -e 'devtools::install_github("jkrijthe/Rtsne",ref="openmp")'
   
 Run \
-  R -e 'devtools::install_github("hms-dbmi/pagoda2")
+  R -e 'devtools::install_github("hms-dbmi/pagoda2")'
 
 ENV  LD_LIBRARY_PATH=/usr/local/lib/R/lib/:$LD_LIBRARY_PATH \
   R_PROFILE=~/.Rprofile
