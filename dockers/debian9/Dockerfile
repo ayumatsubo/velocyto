@@ -52,8 +52,8 @@ RUN \
   echo '.libPaths(c("~/R/x86_64-redhat-linux-gnu-library/3.4", .libPaths()))' > .Rprofile && \
   R -e 'devtools::install_local("~/velocyto.R/",dep=T,upgrade_dependencies=F)'
 
-RUN \
-  R -e 'devtools::install_github("igraph/rigraph")
+#RUN \
+#  R -e 'devtools::install_github("igraph/rigraph")
 
 RUN \
   R -e 'devtools::install_github("jkrijthe/Rtsne",ref="openmp")'
