@@ -42,7 +42,7 @@ RUN \
 #RUN useradd -m user
 USER rstudio
 #ENTRYPOINT ["/bin/bash rs"]
-#WORKDIR "/home/user"
+WORKDIR "/home/rstudio"
 
 RUN \
   git clone https://github.com/velocyto-team/velocyto.R && \
