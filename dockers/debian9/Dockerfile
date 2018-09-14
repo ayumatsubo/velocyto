@@ -45,7 +45,7 @@ USER rstudio
 WORKDIR "/home/rstudio"
 
 RUN \
-  git clone https://github.com/velocyto-team/velocyto.R && \
+  git clone https://github.com/ayumatsubo/velocyto.git && \
   mkdir -p ~/R/x86_64-redhat-linux-gnu-library/3.4
 
 RUN \
