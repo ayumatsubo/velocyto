@@ -33,7 +33,7 @@ RUN apt-get update --yes && apt-get install --no-install-recommends --yes \
   xfonts-base
 
 RUN \
-  R -e 'chooseCRANmirror(ind=52); install.packages(c("devtools", "Rcpp","RcppArmadillo", "Matrix", "mgcv", "abind","h5","Rtsne","cluster","data.table","Cairo","urltools","tidyverse"))'
+  R -e 'chooseCRANmirror(ind=52); install.packages(c("devtools", "Rcpp","RcppArmadillo", "Matrix", "mgcv", "abind","h5","Rtsne","cluster","data.table","Cairo","urltools","tidyverse","Seurat"))'
 
 RUN \
   R -e 'source("https://bioconductor.org/biocLite.R"); biocLite(c("pcaMethods","edgeR","Rsamtools","GenomicAlignments","GenomeInfoDb","Biostrings","GO.db", "org.Hs.eg.db","org.Mm.eg.db"),suppressAutoUpdate=TRUE,ask=FALSE,suppressUpdates=TRUE)'
